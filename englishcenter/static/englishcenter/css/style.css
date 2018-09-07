@@ -1,0 +1,101 @@
+body {
+    font: 1em "HelveticaNeue", sans-serif;
+  }
+  @font-face {
+    font-family: "HelveticaNeue";
+    src: url("../font/HelveticaNeue.otf")
+  }
+.logo-top{
+	border-bottom: 1px solid grey;
+}
+#promise{
+	color: #f7b205;
+}
+.scroll-bot a{
+	background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    padding: 20px;
+    font-size: 1.5em;
+    color: black;
+    height: 60px;
+    left: 48%;
+    bottom: -30px;
+    padding-top: 10px;
+    width: 60px;
+}
+.scroll-bot{
+	position: relative;
+}
+.bgr-home{
+    background-color: #f0f0f0;
+    color: #585858; 
+}
+.number-progress span{
+    color: #F7B205;
+    font-size: 4em;
+    font-weight: 600;
+}
+.education{
+    background-image: url("../images/bgr1.jpg");
+    height: 600px;
+    position: relative;
+    object-fit: cover;
+}
+.education-title{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 1.5em;
+}
+.btn-edu{
+    color: #fff;
+    background-color: #2D912D;
+    border-color: #2D912D;
+    font-size: 1.2em;
+}
+.education-learn a{
+    color: #585858;
+    text-decoration: none;
+}
+.overlay{
+    position: relative;
+}
+.content-build{
+    position: absolute;
+    background-color: rgba(41, 42, 46, 0.7);
+    width: 93.5%;
+    height: 100%;
+    top: 0;
+    transition: opacity 0.7s;
+    opacity: 0;
+    border-radius: 5px;
+}
+.content-build:hover{
+    opacity: 1;
+}
+.solution-title{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    color: white;
+    font-size: 600;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

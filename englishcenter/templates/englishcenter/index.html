@@ -1,0 +1,234 @@
+{% extends "englishcenter/header.html" %}
+{% load static %}
+{% block body %}
+				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="{% static 'englishcenter/images/slider1.jpg' %}" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="{% static 'englishcenter/images/slider2.jpeg' %}" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="{% static 'englishcenter/images/slider3.jpeg' %}" alt="Third slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<div class="scroll-bot">
+					<a href=""><i class="fas fa-arrow-down"></i></a>
+				</div>
+				<div class="container text-center pt-5">
+					<h1>{{ index_information.title_1 }}</h1>
+					<p>{{ index_information.content_title_1 }}</p>
+					<h5 id="promise">100% PROMISE</h5>
+				</div>
+				<div class="container-fluid bgr-home mt-5">
+					<div class="row pt-5 pb-5">
+						<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+							<img src="https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2014/01/Direct-Giving-Illustration.png" alt="image">
+							<h4 class="pt-3">100% DIRECT GIVING</h4>
+							<p>Every dollar donated online goes directly to our programs to educate more children.</p>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+							<img src="https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2014/01/Direct-Giving-Illustration.png" alt="image">
+							<h4 class="pt-3">100% DIRECT GIVING</h4>
+							<p>Every dollar donated online goes directly to our programs to educate more children.</p>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+							<img src="https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2014/01/Direct-Giving-Illustration.png" alt="image">
+							<h4 class="pt-3">100% DIRECT GIVING</h4>
+							<p>Every dollar donated online goes directly to our programs to educate more children.</p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center pt-5">
+					<h1>Our Progress</h1>
+				</div>
+				<div class="container pb-5">
+					<div class="row">
+						<div class="col-sm-6 text-center">
+							<div class="number-progress pr-3">
+								<span class="counter">677</span>
+							</div>
+							<h2>SCHOOL BUILDS</h2>
+						</div>
+						<div class="col-sm-6 text-center">
+							<div class="number-progress pl-3">
+								<span class="counter">20.000</span>
+							</div>
+							<h2>CURRENT STUDENTS</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid education pt-1">
+					<div class="container education-title" style="color: #585858;">
+						<h1>{{ index_information.title_2 }}</h1>
+						<p>{{ index_information.content_title_2 }}</p>
+						<div class="education-learn">
+							<button class="btn btn-edu">GIVE EDUCATION</button>
+							<a class="pl-3" href="#">LEARN MORE <i class="ormas fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="text-center pt-5">
+						<h1>{{ index_information.title_3 }}</h1>
+						<p>{{ index_information.content_title_3 }}</p>
+						<div class="row justify-content-around">
+							<div class="col-sm-12 col-md-5 col-lg-5">
+								<a href="#">
+									<div class="overlay"></div>
+									<img src="{% static 'englishcenter/images/solution1.jpeg' %}" alt="image" class="img-fluid">
+									<div class="content-build">
+										<p class="solution-title">
+											School build
+										</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-5 col-lg-5">
+								<a href="#">
+									<div class="overlay"></div>
+									<img src="{% static 'englishcenter/images/solution2.jpeg' %}" alt="image" class="img-fluid">
+									<div class="content-build">
+										<p class="solution-title">
+											Teacher support
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="education-learn text-center pt-2">
+						<a class="pl-3" href="#" style="font-size: 1.5em; font-weight: 400;">SEE ALL OUR PROGRAM &nbsp;<i class="fas fa-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="container-fluid bgr-home mt-5">
+					<div class="container pt-5 pb-5">
+						<h2 class="text-center">Become a Part of Something Bigger than Yourself</h2>
+
+						<!-- Form nhập dữ liệu -->
+						<form method="post" class="pt-4">
+							{% csrf_token %}
+							<div class="row">
+								<div class="col">
+									<label for="exampleInputFirst">Your name:</label>
+									<input name="student_name" type="text" class="form-control" id="exampleInputFirst" aria-describedby="emailHelp" placeholder="Tên">
+								</div>
+								<div class="col">
+									<label for="exampleInputEmail1">Email address:</label>
+									<input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Địa chỉ mail">
+								</div>
+							</div>
+							<div class="row pt-2">
+								<div class="col">
+									<label for="exampleInputAddress">Address:</label>
+									<input name="address" type="text" class="form-control" id="exampleInputAddress" aria-describedby="emailHelp" placeholder="Địa chỉ">
+								</div>
+								<div class="col">
+									<label for="exampleInputPhone">Phone number:</label>
+									<input name="numberphone" type="text" class="form-control" id="exampleInputPhone" aria-describedby="emailHelp" placeholder="Số điện thoại">
+								</div>
+							</div>
+							<div class="row pt-2">
+								<div class="col">
+									<label for="exampleInputBirth">Date of birth:</label>
+									<input name="datebirth" type="date" class="form-control" id="exampleInputBirth" aria-describedby="emailHelp" placeholder="Ngày Sinh">
+								</div>
+								<div class="col">
+									<label for="inputState">Giới tính</label>
+									<select name="sex" id="inputState" class="form-control">
+										<option selected>Giới tính</option>
+										<option>Female</option>
+										<option>Male</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-warning mt-4 mb-3" style="display: flex; margin-left: auto; margin-right: auto;">Submit</button>
+						</form>
+						<!-- End Form -->
+						<h3 class="text-center">Together, we’re creating a future where all children have a chance to succeed.</h3>
+					</div>
+				</div>
+				<section class="comm-card-container">
+					<div class="grid-container content-headline pb-4">
+						<h1>{{ index_information.title_4 }}</h1>
+					</div>
+					<div class="card-container">
+						<ul class="">
+							<li class="card">
+								<a id="atn-link-jalpa" href="https://medium.com/best-in-class-featured-fundraisers/meet-julpa-purani-shes-putting-education-first-for-her-children-and-children-around-the-world-127e9b27e460#.lydeojl8f"
+									class="card-content normal" data-equalizer-watch="" style="height: 656px;">
+									<div class="image" style="background-image:url('https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/5Y2A3021-1.jpg');">
+										<div class="overlay">
+										</div>
+									</div>
+									<div class="content">
+										<h4>
+										JALPA </h4>
+										<p>
+										Running, biking and selling lemonade with her family to educate kids around the world. </p>
+									</div>
+								</a>
+							</li>
+							<li class="card">
+								<a id="atn-link-get-creative" href="/get-started" class="card-content campaign" data-equalizer-watch="" style="height: 656px;">
+									<div class="image" style="background-image:url('https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2014/01/Web-Campaigner-Illustration.png');">
+										<div class="overlay">
+										</div>
+									</div>
+									<div class="content">
+										<h4>
+										GET CREATIVE! </h4>
+										<p>
+										Start your own campaign for education. </p>
+									</div>
+								</a>
+							</li>
+							<li class="card">
+								<a id="atn-link-courtney" href="https://medium.com/best-in-class-featured-fundraisers/courtney-smith-ordinary-people-extraordinary-change-5d44ffc79364#.klojeflu5"
+									class="card-content normal" data-equalizer-watch="" style="height: 656px;">
+									<div class="image" style="background-image:url('https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2014/01/5Y2A3135-1.jpg');">
+										<div class="overlay">
+										</div>
+									</div>
+									<div class="content">
+										<h4>
+										COURTNEY </h4>
+										<p>
+											Fundraising for a school build, through athletic events &amp; babysitting, and raising awareness about the importance of
+										education for all children. </p>
+									</div>
+								</a>
+							</li>
+							<li class="card">
+								<a id="atn-link-eric" href="https://medium.com/best-in-class-featured-fundraisers/meet-eric-thai-hes-putting-the-fun-in-fundraising-2b67eb9cd7d0#.9qy3ff9an"
+									class="card-content normal" data-equalizer-watch="" style="height: 656px;">
+									<div class="image" style="background-image:url('https://pencilspromise-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Pencil-2-1.jpg');">
+										<div class="overlay">
+										</div>
+									</div>
+									<div class="content">
+										<h4>
+										ERIC </h4>
+										<p>
+										Requesting donations in place of birthday gifts to improve literacy outcomes across the globe. </p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<script src="{% static 'englishcenter/js/waypoints.min.js' %}"></script>
+				<script src="{% static 'englishcenter/js/jquery.counterup.min.js' %}"></script>
+				<script src="{% static 'englishcenter/js/countUp.js' %}"></script>
+
+			{% endblock %}

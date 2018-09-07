@@ -1,0 +1,71 @@
+{% extends "englishcenter/base.html" %}
+
+{% block body %}
+
+    <form method="post">{% csrf_token %}
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+        <label for="validationServer01">Full Name</label>
+        <input name="student_name" type="text" class="form-control" id="validationServer01" placeholder="David Beck" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        </div>
+    </div>
+    <div  class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationServer02">Email</label>
+            <input name='email' type="email" class="form-control" id="validationServer02" placeholder="abc@gmail.com" required>
+            <div class="valid-feedback">
+             Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationServerUsername">Phone</label>
+            <div class="input-group">
+                <input name="numberphone" type="number" class="form-control" id="validationServerUsername" placeholder="090000000" aria-describedby="inputGroupPrepend3"  required>
+                <div class="invalid-feedback">
+                    Please input your phone number.
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Address</label>
+      <input name='address' type="text" class="form-control" id="validationServer03" placeholder="" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+        <div class="col-md-3 mb-3">
+            <label for="inputState">Sex</label>
+            <select name="sex" id="inputState" class="form-control">
+                <option selected></option>
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+        </div>     
+  </div>
+  <div class="form-row">
+        <div class="col-md-3 mb-3">
+            <label>Date of birth</label>
+                <div class="form-group row">
+                <div class="col-10">
+                    <input name="datebirth" class="form-control" type="date" id="example-datetime-local-input">
+                </div>
+                </div>
+            <div class="invalid-feedback">
+                Please provide .
+            </div>
+        </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Đăng ký</button>
+</form>
+
+{% endblock %}

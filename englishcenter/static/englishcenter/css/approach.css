@@ -1,0 +1,23 @@
+#content-wrap {
+    clear: both;
+}
+.picture-full-container {
+    width: 100%;
+    margin-bottom: 32px;
+    position: relative;
+}
+.grid-container {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
+.picture-full-container .content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid #cacaca;
+}
