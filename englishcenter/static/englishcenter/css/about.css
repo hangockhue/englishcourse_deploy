@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+#content-wrap {
+    clear: both;
+}
+
+.icon-grid-container {
+    overflow: hidden;
+}
+
+.grid-container {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
+
+.top-space {
+    margin-top: 45px;
+}
+
+.grid-container {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
+
+.content-headline {
+    text-align: center;
+}
+
+.content-headline h2 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.content-headline hr {
+    padding-left: 0;
+    padding-right: 0;
+    width: 91.66667%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+hr {
+    border-color: #f5b206 !important;
+    max-width: 150px;
+    margin: 15px auto !important;
+    border-width: 5px !important;
+    border: solid #ddd;
+    clear: both;
+    height: 0;
+    margin: 1.2
+}
+
+.content-headline p {
+    padding-left: 0;
+    padding-right: 0;
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 2.1875rem;
+    margin-bottom: 2.6875rem;
+    line-height: 1.4;
+}
+
+p {
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+
+.cta-headline-text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.grid-container {
+    margin: 0 auto;
+    max-width: 62.5rem;
+}
+
+.cta-headline-text .text-button-container {
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 55px;
+    border: 1px solid;
+    padding: 33px 30px;
+}
+
+.cta-headline-text .text-button-container .pop-button {
+    float: left;
+    margin-right: 45px;
+}
+
+.pop-button.green {
+    background-color: #2D912D;
+    border-color: #2D912D;
+}
+
+.pop-button {
+    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out,border-color 0.3s ease-in-out;
+    -webkit-appearance: none;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    font-family: "Proxima Nova W01","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: uppercase;
+    padding: 18px 30px 14px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cta-headline-text .text-button-container p:last-child {
+    margin-bottom: 0;
+}
+
+.cta-headline-text .text-button-container p {
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.single-column-content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.single-column-content {
+    text-align: center;
+}
+
+.single-column-content h3 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #f5b206 !important;
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.single-column-content p {
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.full-picture-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    margin-bottom: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-picture-container .img-container {
+    margin-bottom: 0;
+    max-height: none;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.full-picture-container .grid-container {
+    position: relative;
+    overflow: visible;
+}
+
+.full-picture-container.copy-left .copy-container {
+    left: 0;
+    right: auto;
+}
+
+.full-picture-container .copy-container {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    float: left;
+    position: absolute;
+    top: 0;
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-picture-container.align-left .copy-container .copy {
+    text-align: left;
+}
+
+.full-picture-container.align-left .copy-container h2 {
+    text-align: left;
+}
+
+.full-picture-container .copy-container .copy h2 {
+    color: #fff;
+    font-size: 3rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.full-picture-container.full-picture-about .copy-container .copy p {
+    font-size: 1.5rem;
+}
+
+.full-picture-container.align-left .copy-container p {
+    text-align: left;
+}
+
+.full-picture-container .copy-container .copy p {
+    color: #fff;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+.pop-button.large-white.hollow {
+    color: #fff;
+    background-color: transparent;
+}
+
+.pop-button.large-white {
+    border-color: #fff;
+}
+
+.cta-donate-container {
+    margin-bottom: 52px;
+}
+
+.cta-donate-container .cta-donate-item {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 33.33333%;
+    float: left;
+}
+
+.cta-donate-item {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-donate-item h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cta-donate-item .content {
+    overflow: hidden;
+}
+
+.cta-donate-item .content h5 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+    float: left;
+    -webkit-border-bottom-left-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border: 1px solid #848484;
+    padding: 19px 30px 15px;
+    margin-top: 0;
+    margin-bottom: 22px;
+    line-height: 24px;
+    color: #585858;
+    font-size: 1.5rem;
+}
+
+.cta-donate-item .content .pop-button {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+    float: left;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.pop-button.green {
+    background-color: #2D912D;
+    border-color: #2D912D;
+}
+
+
+.pop-button.large-white.hollow:hover, .pop-button.large-white.hollow:focus {
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+}

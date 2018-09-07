@@ -1,3 +1,10 @@
+body {
+    font: 1em "HelveticaNeue", sans-serif;
+  }
+  @font-face {
+    font-family: "HelveticaNeue";
+    src: url("../font/HelveticaNeue.otf")
+  }
 .comm-card-container {
     max-width: 1275px;
     margin: 0 auto;

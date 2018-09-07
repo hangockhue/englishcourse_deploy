@@ -1,23 +1,265 @@
+body {
+    font: 1em "HelveticaNeue", sans-serif;
+  }
+  @font-face {
+    font-family: "HelveticaNeue";
+    src: url("../font/HelveticaNeue.otf")
+  }
 #content-wrap {
     clear: both;
 }
 .picture-full-container {
+    height: 800px;
     width: 100%;
     margin-bottom: 32px;
     position: relative;
 }
+.picture-full-container .image-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
 .grid-container {
     margin: 0 auto;
     max-width: 62.5rem;
     width: 100%;
 }
+
+.picture-full-container.content-left .content {
+    max-width: 495px;
+    
+}
+
 .picture-full-container .content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 100%;
+    width: 75%;
     float: left;
-    padding-top: 40px;
+    padding-top: 0;
+    border-bottom: none;
     position: relative;
     z-index: 2;
-    border-bottom: 1px solid #cacaca;
+}
+
+.picture-full-container.content-white .content h2 {
+    color: #fff;
+}
+
+.picture-full-container .content h2 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.picture-full-container .content h2+hr {
+    margin-top: 0;
+}
+
+.picture-full-container .content hr {
+    border-color: #fff;
+}
+
+hr {
+    border-color: #f5b206 !important;
+    max-width: 150px;
+    margin: 15px auto;
+    border-width: 5px;
+    border: solid #ddd;
+    clear: both;
+    height: 0;
+}
+
+.picture-full-container.content-white .content p {
+    color: #fff;
+}
+
+p {
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+
+.content-headline {
+    text-align: center;
+}
+
+.content-headline h2 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 83.33333%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+
+.featured-image-content {
+    max-width: 1100px;
+    margin-bottom: 30px;
+}
+
+.featured-image-content .content {
+    overflow: hidden;
+    margin: 0 10px 30px;
+}
+
+.featured-image-content .link {
+    padding-left: 0;
+    padding-right: 0;
+    width: 41.66667%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.featured-image-content .link .image {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-image-content .link .image .aspect-ratio {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.featured-image-content .link .image .d_button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+}
+
+.featured-image-content .text-container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 58.33333%;
+    float: left;
+    padding: 60px 0 0 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.featured-image-content .text-container p {
+    padding-bottom: 30px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.pop-button.gray.hollow {
+    color: #585858;
+    background-color: transparent;
+}
+
+.pop-button.arrow-secondary {
+    font-size: 1.75rem;
+}
+
+.pop-button.no-side-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pop-button.no-border {
+    border: none;
+}
+
+.pop-button {
+    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out,border-color 0.3s ease-in-out;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-family: "Proxima Nova W01","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    text-transform: uppercase;
+    padding: 18px 30px 14px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.pop-button.arrow-secondary .icon-container {
+    background-position: 0 -335px;
+    width: 27px;
+    height: 25px;
+    margin-left: 8px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.pop-button.has-icon .icon-container {
+    vertical-align: baseline;
+    background: url(../images/sprites/button-icons-s8eb24cbf9d.png) 0 -415px no-repeat;
+}
+
+.pop-button .icon-container {
+    display: inline-block;
+}
+
+.icons-grid {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.icons-grid .icon:nth-child(6n+1) {
+    clear: left;
+}
+
+.icons-grid .icon {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 16.66667%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.column, .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+}
+
+.small-12 {
+    width: 100%;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
 }
